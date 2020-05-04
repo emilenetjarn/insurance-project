@@ -1,0 +1,416 @@
+body{
+    background-color: dimgray;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 60px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.container .topBox{
+    display: grid;
+    height: 595px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.topBox .blueBox{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color:lightblue;
+    padding-left: 20%;
+}
+
+.topBox .blueBox .gotU{
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+
+.topBox .blueBox p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: dimgray;
+    line-height: 1.7;
+}
+
+.blueBox .join{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    border-radius: 30px;
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+}
+
+.blueBox .family{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 355px;
+    left: 470px
+}
+
+.topBox .redBox{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: indianred;
+    text-align: center;
+}
+
+.redBox p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: dimgray;
+    margin-top: 20%;
+}
+
+.redBox h2{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: white;
+    margin: 0;
+}
+
+.topBox .orangeBox{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: orange;
+    text-align: center;
+}
+
+.orangeBox p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: dimgray;
+    margin-top: 20%;
+}
+
+.orangeBox h3{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: white;
+    margin: 0;
+}
+
+.whiteMenu{
+    background-color: whitesmoke;
+    height: 70px;
+    padding-right: 20%;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whiteMenu .menuItem{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: dimgray;
+    line-height: 1.5;
+}
+
+.whiteMenu .menuItem.home{
+    color: black;
+}
+
+.midGray{
+    margin: 0;
+    background-color:rgb(180, 175, 175);
+    height: 675px;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.leftSide .pers{
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: white;
+    margin: 0;
+}
+
+.leftSide .join{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 40px;
+    width: 100px;
+}
+
+.midGray .fill{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: dimgray;
+    line-height: 1.7;
+    margin-right: 15%;
+    margin-left: 10%;
+}
+
+.midOrange{
+    background-color: orange;
+    height: 675px;
+}
+
+.midOrange .flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+    top: -175px;
+}
+
+.flexContainer .whiteBox{
+    background-color: white;
+    border-radius: 7px;
+    width: 275px;
+    height: 350px;
+}
+.whiteBox.first{
+    margin-left: 7%;
+}
+
+.whiteBox.first .img-first{
+    width: 250px;
+    height: 180px;
+    border-radius: 7px;
+    background-color:lightblue;
+    background-image: url(img/child.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    left: 12px;
+    bottom: 20px;
+}
+
+.whiteBox.middle .img-middle{
+    width: 250px;
+    height: 180px;
+    border-radius: 7px;
+    background-color:orange;
+    background-image: url(img/adult.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    left: 12px;
+    bottom: 20px;
+}
+
+.whiteBox.last{
+    margin-right: 7%;
+}
+
+.whiteBox.last .img-last{
+    width: 250px;
+    height: 180px;
+    border-radius: 7px;
+    background-color:orangered;
+    background-image: url(img/old.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    left: 12px;
+    bottom: 20px;
+}
+
+.whiteBox .midTitle{
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.whiteBox .midFill{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: dimgray;
+    line-height: 1.7;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.midOrange .about{
+    position: relative;
+    bottom: 100px;
+}
+
+.midOrange .about header{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: white;
+    margin: 0;
+}
+
+.midOrange .about article{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: dimgray;
+    line-height: 1.7;
+}
+
+.gridBox{
+    height: 675px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.gridBox .box.one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgb(195, 211, 231);
+    padding: 5%;
+}
+
+.gridBox .box.one header{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: black;
+    margin-top: 25%;
+}
+
+.gridBox .box.two{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: white;
+    padding: 5%;
+}
+
+.gridBox .box.two header{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: dimgray;
+}
+
+.gridBox .box.three{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: whitesmoke;
+    padding: 5%;
+}
+
+.gridBox .box.three header{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: dimgray;
+}
+
+.gridBox .box.four{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:white;
+    padding: 5%;
+}
+
+.gridBox .box.four header{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: dimgray;
+}
+
+.gridBox .box.five{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color:rgb(255, 137, 94);
+    padding: 5%;
+}
+
+.gridBox .box.five header{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: dimgray;
+}
+
+.gridBox .box.six{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: white;
+    padding: 5%;
+}
+
+.gridBox .box.six header{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: dimgray;
+}
+
+.gridBox .box article{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: dimgray;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.goUp{
+    height: 70px;
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px;
+}
+
+.goUp .up{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    line-height: 1.4;
+}
+
+.grayFoot{
+    height: 300px;
+    background-color: gray;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
